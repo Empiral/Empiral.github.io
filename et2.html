@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1024">
-    <title>Griglia di Immagini con Bottoni</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -51,29 +50,38 @@
         }
     </style>
 </head>
-
-<body bgcolor="green">
-<p><bold><i><strong>Empirial Tournament</strong></i></bold></p>
+<body>
+<body bgcolor="#99CBFF">
+<p><bold><i><strong>Empiral Tournament</strong></i></bold></p>
     <div class="container">
         <div class="image-container">
-            <img src="https://i.imgur.com/EiWROus.png" alt="Empirial League Tournament"></br>
-            <button onclick="window.location.href='Empirial League Tournament.html'">Empirial League Tournament</button>
+            <img src="https://i.imgur.com/EiWROus.png" alt="Empiral League Tournament"></br>
+			  <button onclick="openGitHubFile()">Empiral League Tournament</button>
+
+		<script>
+			function openGitHubFile() {
+            // Inserisci qui l'URL del file su GitHub
+            var githubUrl = 'https://github.com/Empiral/Empiral.github.io/blob/main/Empirial%20League%20Tournament.html';
+            window.open(githubUrl, '_blank');
+        }
+		</script>
+            <button onclick="window.location.href='Empirial League Tournament.html'"></button>
         </div>
         <div class="image-container">
             <img src="https://i.imgur.com/MTJ1HD5.png" alt="Empirial Cup"></br>
-            <button>Empirial Cup</button>
+            <button>Empiral Cup</button>
         </div>
         <div class="image-container">
             <img src="https://i.imgur.com/hUsz7WB.jpg" alt="Empirial Tactic"></br>
-            <button>Empirial Tactic</button>
+            <button>Empiral Tactic</button>
         </div>
         <div class="image-container">
             <img src="https://i.imgur.com/Rp3uX5i.jpg" alt="Empirial Fantasy"></br>
-            <button>Empirial Fantasy</button>
+            <button>Empiral Fantasy</button>
         </div>
 		 <div class="image-container">
             <img src="https://i.imgur.com/rYtszet.png" alt="Empirial Finals"></br>
-            <button>Empirial Finals</button>
+            <button>Empiral Finals</button>
         </div>
     </div>
 </body>
