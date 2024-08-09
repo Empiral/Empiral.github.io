@@ -5,6 +5,11 @@
     <meta name="viewport" content="1024">
     <style>
         body {
+			background-image: url('https://raw.githubusercontent.com/Empiral/Empiral.github.io/master/dft11.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -13,7 +18,7 @@
             min-height: 100vh; /* Altezza minima del viewport */
         }
 		p{
-		color:blue;
+		color:yellow;
 		font-size:50px;
 		padding:50px;
 		text-align:center;
@@ -21,21 +26,34 @@
         header {
             text-align: center;
             padding: 20px;
+			
         }
         table {
             width: 80%; /* Imposta la larghezza della tabella */
             margin: 20px auto; /* Centra la tabella orizzontalmente */
             border-collapse: collapse;
+			background-color: rgba(255, 255, 255, 0.8);
+        }
+		thead tr {
+            background-color: transparent; /* Rende trasparente la prima riga */
+            color: white; /* Testo bianco per contrastare l'immagine di sfondo */
         }
         table, th, td {
-            border: 1px solid black;
+            border: 10px solid white;
+			color: white;
+			
+			
         }
         th, td {
             padding: 8px;
-            text-align: left;
+            text-align: center;
+			color: black;
+			font-size:30px;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: red;
+			color:yellow;
+			font-size:40px;
         }
        
 		.container {
@@ -88,13 +106,13 @@
         <table>
             <thead>
                 <tr>
-                    <th>Edizione</th>
+                    <strong><th>Edizione</th></strong>
                     <th>Nome Lega</th>
                     <th>Vincitore</th>
                 </tr>
             </thead>
              <tr>
-                    <td rowspan="3">1°</td>
+                    <td rowspan="3"><strong>1°</strong></td>
 					
                     <td>Leca Campioni</td>
                     <td class="larghezza-colonna1">Dato 1C</td>
