@@ -5,17 +5,14 @@
     <meta name="viewport" content="1024">
     <style>
         body {
+		
 			background-image: url('https://raw.githubusercontent.com/Empiral/Empiral.github.io/master/dft11.jpg');
             background-size: cover; /* Adatta l'immagine allo schermo */
             background-position: center; /* Centra l'immagine */
-            background-attachment: fixed; /* Fissa l'immagine durante lo scroll */
-            background-repeat: no-repeat;
-            height: 100vh;
             font-family: Arial, sans-serif;
-			padding: 200px; /* Aggiungi padding all'intero corpo della pagina */
-            margin: 0; /* Rimuovi il margine predefinito del browser */
+            margin: 0;
+            padding: 0;
             display: flex;
-            align-items: center;
             flex-direction: column;
             min-height: 100vh; /* Altezza minima del viewport */
         }
@@ -28,53 +25,33 @@
         header {
             text-align: center;
             padding: 20px;
-			
         }
-         table {
+        table {
             width: 80%; /* Imposta la larghezza della tabella */
-            background-color: rgba(255, 255, 255, 0.5); /* Colore di sfondo bianco con trasparenza */
+            margin: 20px auto; /* Centra la tabella orizzontalmente */
+            border-collapse: collapse;
+			background-color: rgba(255, 255, 255, 0.5); /* Colore di sfondo bianco con trasparenza */
             border-collapse: collapse; /* Rimuove lo spazio tra i bordi delle celle */
-			margin: 2px 0;
-			align:center;
-        }
-		 .container {
-            padding: 20px; /* Spazio ai lati */
-			display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Opzionale: centra verticalmente l'intera pagina */
-            margin: 0;
-        }
-
-        th, td {
-            border: 10px solid rgba(0, 0, 0, 0.2); /* Bordo delle celle con trasparenza */
-            padding: 10px; /* Spazio interno alle celle */
-            text-align: left; /* Allineamento del testo */
-			padding: 8px;
-            text-align: center;
-			color: black;
-			font-size:30px;
-        }
-		thead tr {
-            background-color: transparent; /* Rende trasparente la prima riga */
-            color: white; /* Testo bianco per contrastare l'immagine di sfondo */
+			
         }
         table, th, td {
             border: 1px solid white;
-			color: white;
-			
-			
         }
         th, td {
-           
+            padding: 8px;
+            text-align: left;
         }
         th {
-            background-color: red;
-			color:yellow;
-			font-size:40px;
+            background-color: #f2f2f2;
         }
        
-		
+		.container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
         
         }
         .image-container img {
