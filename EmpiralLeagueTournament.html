@@ -12,7 +12,7 @@
             background-repeat: no-repeat;
             height: 100vh;
             font-family: Arial, sans-serif;
-			padding: 200px; /* Aggiungi padding all'intero corpo della pagina */
+			padding: 100px; /* Aggiungi padding all'intero corpo della pagina */
             margin: 0; /* Rimuovi il margine predefinito del browser */
             display: flex;
             flex-direction: column;
@@ -33,13 +33,17 @@
             width: 100%; /* Imposta la larghezza della tabella */
             background-color: rgba(255, 255, 255, 0.5); /* Colore di sfondo bianco con trasparenza */
             border-collapse: collapse; /* Rimuove lo spazio tra i bordi delle celle */
+			margin: 20px 0;
+        }
+		 .container {
+            padding: 0 15px; /* Spazio ai lati */
         }
 
         th, td {
             border: 1px solid rgba(0, 0, 0, 0.2); /* Bordo delle celle con trasparenza */
             padding: 10px; /* Spazio interno alle celle */
             text-align: left; /* Allineamento del testo */
-			padding: 100px;
+			padding: 8px;
             text-align: center;
 			color: black;
 			font-size:30px;
@@ -63,13 +67,7 @@
 			font-size:40px;
         }
        
-		.container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
+		
         
         }
         .image-container img {
